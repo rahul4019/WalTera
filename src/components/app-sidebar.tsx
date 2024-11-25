@@ -62,14 +62,16 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarHeader>
         <div className="flex items-center gap-2 p-4">
-          <Image
-            src="https://images.unsplash.com/photo-1557683311-eac922347aa1?w=32&h=32&fit=crop&crop=edges"
-            alt="WallTera Logo"
-            width={32}
-            height={32}
-            className="rounded-full"
-          />
-          <span className="font-bold group-data-[collapsible=icon]:hidden">
+          <div className="bg-accent rounded-full p-1">
+            <Image
+              src="https://images.unsplash.com/photo-1557683311-eac922347aa1?w=32&h=32&fit=crop&crop=edges"
+              alt="WallTera Logo"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+          </div>
+          <span className="font-bold text-accent group-data-[collapsible=icon]:hidden">
             WallTera
           </span>
         </div>
@@ -85,7 +87,7 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.label}>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <SidebarMenuButton>
+                      <SidebarMenuButton className="hover:bg-accent hover:text-accent-foreground">
                         <item.icon className="w-4 h-4 mr-2 group-data-[collapsible=icon]:mr-0" />
                         <span className="group-data-[collapsible=icon]:hidden">
                           {item.label}
@@ -115,7 +117,7 @@ export function AppSidebar() {
                   <SidebarMenuItem key={category}>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <SidebarMenuButton>
+                        <SidebarMenuButton className="hover:bg-accent hover:text-accent-foreground">
                           <Tag className="w-4 h-4 mr-2 group-data-[collapsible=icon]:mr-0" />
                           <span className="group-data-[collapsible=icon]:hidden">
                             {category}
