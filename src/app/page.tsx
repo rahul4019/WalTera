@@ -20,7 +20,7 @@ export default function Home() {
                   <Menu className="w-5 h-5" />
                   <span className="sr-only">Toggle Sidebar</span>
                 </SidebarTrigger>
-                <h1 className="ml-4 text-2xl font-bold">WallTera</h1>
+                <h1 className="ml-4 text-2xl font-bold">WalTera</h1>
               </div>
               <div>
                 <Button variant="ghost" size="icon">

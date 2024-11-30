@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "WallTera",
+  title: "WalTera",
   description: "Discover and download stunning wallpaper",
 };
 

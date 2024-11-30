@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Home,
-  ImageIcon,
-  Heart,
-  Download,
-  Settings,
-  Tag,
-  ChevronRight,
-} from "lucide-react";
+import { Home, ImageIcon, Heart, Download, Settings, Tag } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -61,20 +53,39 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
-        <div className="flex items-center gap-2 p-4">
-          <div className="bg-accent rounded-full p-1">
-            <Image
-              src="https://images.unsplash.com/photo-1557683311-eac922347aa1?w=32&h=32&fit=crop&crop=edges"
-              alt="WallTera Logo"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-          </div>
-          <span className="font-bold text-accent group-data-[collapsible=icon]:hidden">
-            WallTera
-          </span>
-        </div>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            {/* <SidebarMenuButton className="overflow-hidden [&>[data-sidebar=sidebar]]:flex-col"> */}
+            {/* <div className="flex items-center gap-2 p-4"> */}
+            {/*   <div className=" rounded-full p-1"> */}
+            {/*     <Image */}
+            {/*       src="./waltera.svg" */}
+            {/*       alt="WalTera Logo" */}
+            {/*       width={32} */}
+            {/*       height={32} */}
+            {/*       className="rounded-full" */}
+            {/*     /> */}
+            {/*   </div> */}
+            {/*   <span className="font-bold text-accent group-data-[collapsible=icon]:hidden"> */}
+            {/*     WalTera */}
+            {/*   </span> */}
+            {/* </div> */}
+            {/* <div className="flex justify-start items-center gap-2 p-4"> */}
+            <div className="flex gap-2 items-center justify-center rounded-lg">
+              <Image
+                src="./waltera.svg"
+                alt="WalTera Logo"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              <div className="grid flex-1 text-left text-sm leading-tight">
+                <span className="truncate font-semibold">WalTera</span>
+              </div>
+            </div>
+            {/* </SidebarMenuButton> */}
+          </SidebarMenuItem>
+        </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
